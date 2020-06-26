@@ -12,6 +12,14 @@
         <header>
             <div class="container">
                 <img src="logo.png" alt="logo" />
+                <label for="genre">Seleziona un genere musicale</label>
+                <select id="genreSelect" class="genere" name="genre">
+                  <option value="">Seleziona</option>
+                  <option value="pop">pop</option>
+                  <option value="rock">rock</option>
+                  <option value="metal">metal</option>
+                  <option value="jazz">jazz</option>
+                </select>
             </div>
         </header>
 
@@ -25,6 +33,7 @@
               <h3>{{title}}</h3>
               <span class="author">{{author}}</span>
               <span class="year">{{year}}</span>
+              <span class="genre hidden">{{genre}}</span>
           </div>
         </script>
 
